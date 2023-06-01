@@ -9,10 +9,11 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvi
 ```
 mkdir repositories
 cd repositories
-git clone git@github.com:mzbac/GPTQ-for-LLaMa.git
+git clone https://github.com/qwopqwop200/GPTQ-for-LLaMa.git -b cuda
 
 cd GPTQ-for-LLaMa
 pip install -r requirements.txt
+python setup_cuda.py install
 ```
 
 ## Installation QLoRa dependencies
